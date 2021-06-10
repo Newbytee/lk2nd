@@ -1,17 +1,12 @@
 /dts-v1/;
 
+#include <skeleton.dtsi>
+
 / {
-	#address-cells = <0x02>;
-	#size-cells = <0x02>;
-	interrupt-parent = <0x01>;
 	model = "Qualcomm Technologies, Inc. MSM 8939 CDP";
 	compatible = "htc,msm8939\0htc,a51dtul\0qcom,msm8939-cdp\0qcom,msm8939\0qcom,cdp";
         qcom,msm-id = <0x17e 0x10000>;
 	htc,project-id = <0x17e 0x10000>;
 	htc,hw-id = <0x00 0x00 0x01 0x00 0x02 0x00 0x80 0x00>;
 	qcom,board-id = <0x01 0x00>;
-
-	chosen {
-		bootargs = "boot_cpus=0,1 sched_enable_hmp=1";
-	};
 };
